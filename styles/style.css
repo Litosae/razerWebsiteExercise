@@ -1,0 +1,117 @@
+:root {
+  --primary-color: #73e161;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+p {
+  padding: 1em 0;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  box-shadow: 0 0 10px rgba(72, 255, 0, 0.8);
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero section */
+.hero-section {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transform: skewY(-3deg);
+  z-index: -1;
+  box-shadow: 3px 3px 10px;
+}
+
+
+.hero-image {
+  background: url("https://assets2.razerzone.com/images/pnx.assets/fcaef7e6e23869bff58e0b3baa1fd255/left-handed-naga-discover-desktop.webp") no-repeat center center/cover;
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.hero-button {
+  background-color: #333;
+  color: white;
+  padding: 1em 2em;
+  border: 1px solid var(--primary-color);
+  margin: 1em;
+  display: inline-block;
+}
+
+.hero-button:hover {
+  background: #52774c;
+  transform: scale(0.95);
+}
+
+/* Information Section */
+.info-section {
+  background-color: var(--primary-color);
+  color: #333;
+}
+
+.content-wrap{
+  width: 50%;
+  margin: auto;
+}
+
+.info-section p {
+  column-count: 2;
+  column-gap: 2em;
+  /* padding-top: 0; */
+  padding-bottom: 3em;
+}
+
+.info-section h2 {
+  padding: 1em 0;
+}
