@@ -19,6 +19,7 @@ body {
 
 p {
   padding: 1em 0;
+  font-size: 0.9em;
 }
 
 /* Navigation Bar */
@@ -28,7 +29,7 @@ p {
   justify-content: space-around;
   align-items: center;
   height: 70px;
-  box-shadow: 0 0 10px rgba(72, 255, 0, 0.8);
+  box-shadow: 0 0 8px rgba(72, 255, 0, 0.8);
 }
 
 .logo {
@@ -49,8 +50,9 @@ a {
 
 /* Hero section */
 .hero-section {
-  height: 450px;
+  min-height: 450px;
   display: flex;
+  flex-direction: column ;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -75,9 +77,8 @@ a {
   width: 100%;
   height: 450px;
   position: absolute;
-  top: 0px;
   z-index: -1;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 .hero-button {
@@ -98,20 +99,127 @@ a {
 .info-section {
   background-color: var(--primary-color);
   color: #333;
+  height: 200px;
 }
 
 .content-wrap{
-  width: 50%;
+  width: 60%;
   margin: auto;
 }
 
 .info-section p {
   column-count: 2;
   column-gap: 2em;
-  /* padding-top: 0; */
-  padding-bottom: 3em;
 }
 
 .info-section h2 {
   padding: 1em 0;
+  font-size: 1.3em;
+}
+
+/* Card section */
+.card-container {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 100vw;
+  gap: 30px;
+}
+
+.card{
+  background-color: var(--primary-color);
+  color: #333;
+  height: 100px;
+  width:300px;
+  height: 540px;
+  box-shadow: 4px 4px 15px black;
+}
+
+.card-image{
+  background: url("https://www.dexerto.fr/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.fr/wp-content/uploads/sites/2/2021/12/16/razer-blackwidow-v3-pro.jpg") no-repeat center center/cover;
+  height: 40%;
+  width: 100%;
+}
+
+.card h3 {
+  padding: 3em 0 2em 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.card p {
+  column-count: 1;
+  padding: 0 1em 1em 1em;
+}
+
+.card-button {
+  background-color: #333;
+  color: white;
+  padding: 1.2em 2em;
+  margin: 1em;
+  border: 1px solid var(--primary-color);
+}
+
+/* Overview Section */
+.overview-section{
+  background-color: black;
+  color: white;
+  height: 200px;
+}
+
+.overview-wrap{
+  width: 50%;
+  margin: auto;
+}
+.overview-section h3 {
+  padding: 2em 0;
+}
+
+.overview-section p {
+  padding: 0 1em;
+}
+
+/* Contact & Company Info */
+.contact-and-company-wrap{
+  height: 250px;
+  display: flex;
+  justify-content:center;
+  align-items: baseline;
+}
+
+.contact{
+  background-color: var(--primary-color);
+  color: black;
+  height: 100%;
+  width: 50%;
+}
+
+.company{
+  background-color: #333;
+  color: white;
+  height: 100%;
+  width: 50%;
+}
+
+.contact h3, .company h3 {
+  padding: 1em 0;
+  margin-top: 1em;
+}
+
+.contact p, .company p {
+  padding: 1em;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.trademark p {
+  color: var(--primary-color);
 }
